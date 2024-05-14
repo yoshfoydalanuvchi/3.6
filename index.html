@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -39,22 +45,77 @@
     </header>
     <main id="main">
       <section class="about container">
-        <div class="about__video"></div>
-        <div class="about__text">
-          <h1 class="green small-h1">SAW PRODUCT</h1>
-          <h1 class="h1">About the Product</h1>
-          <p class="subtitle">
-            To date, the lawn and garden equipment manufacturing industry is
-            worth a staggering $8.6 Billion. Gasoline-powered lawn and garden
-            equipment accounted for 24-45% of all non-road gasoline emissions,
-            according to the U.S. Environmental Protection Agency (EPA).
-            <br /><br />
-            If this figure does not raise any alarms, here is some context:
-            <br /><br />One new gas-powered lawnmower produces the same amount
-            of volatile organic compounds in one hour of operation as 11 new
-            cars each being driven for the same amount of time.
+        <div class="flex">
+          <div class="about__video">
+            <iframe
+              width="560"
+              height="315"
+              muted
+              src="https://www.youtube.com/embed/6LHDSeifxUE?si=KlsiEsiUym-OqI5t"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="about__text">
+            <h1 class="green small-h1">SAW PRODUCT</h1>
+            <h1 class="h1">About the Product</h1>
+            <p class="subtitle">
+              To date, the lawn and garden equipment manufacturing industry is
+              worth a staggering $8.6 Billion. Gasoline-powered lawn and garden
+              equipment accounted for 24-45% of all non-road gasoline emissions,
+              according to the U.S. Environmental Protection Agency (EPA).
+              <br /><br />
+              If this figure does not raise any alarms, here is some context:
+              <br /><br />One new gas-powered lawnmower produces the same amount
+              of volatile organic compounds in one hour of operation as 11 new
+              cars each being driven for the same amount of time.
+            </p>
+            <button class="btn">Contact Us</button>
+          </div>
+        </div>
+        <div class="about__bottom">
+          <div class="ab-box">
+            <div class="ab-icon"><img src="img/icon-1.svg" alt="icon" /></div>
+            <div class="ab-text">
+              <h1>100% GREENG GARDENING EQUIPMENT</h1>
+              <p class="subtitle">
+                Our products will operate on 100% sustaiinable power sources and
+                at the same time product NO harmful emissions.
+              </p>
+            </div>
+          </div>
+          <div class="ab-box">
+            <div class="ab-icon"><img src="img/icon-2.svg" alt="icon" /></div>
+            <div class="ab-text">
+              <h1>ENHANCING OUR USER-EXPERIENCET</h1>
+              <p class="subtitle">
+                We have merged funtion and efficiency with technogy, offering a
+                unique set of products that cater to your every need.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <h1 class="small-h1">FEATURES</h1>
+          <h1 class="h1">FUTURISTIC COMPACT CASING</h1>
+          <p>
+            The ergonomic design of the multi-tool casing delivers an
+            ultra-comfortable fit in any hand
           </p>
-          <button class="btn">Contact Us</button>
+          <ul>
+            <li>High-quality trigger</li>
+            <li>Fische renality</li>
+            <li>Rechargeable lithium battery</li>
+            <li>Safety lock to prevent accidental presses</li>
+            <li>Led battery indicator lights & switch</li>
+            <li>Anti-slip material for a comfortable grip</li>
+            <li>Led light for added visibility</li>
+            <li>Durable support handle</li>
+          </ul>
         </div>
       </section>
     </main>
