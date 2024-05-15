@@ -7,6 +7,9 @@ $green: #3ea83b;
 a {
   text-decoration: none;
   color: inherit;
+  &:hover {
+    color: $green;
+  }
 }
 .btn {
   border: none;
@@ -17,6 +20,12 @@ a {
   border-radius: 43px;
   color: #ffffff;
   background: $green;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    color: $green;
+    background-color: #2ae85f;
+  }
 }
 .green {
   color: $green;
@@ -36,10 +45,6 @@ a {
 .nav-wrapper {
   gap: 315px;
   padding-block: 10px;
-}
-%flex {
-  display: flex;
-  align-items: center;
 }
 .nav-wrapper,
 .logo,
@@ -76,11 +81,9 @@ a {
       rgba(237, 255, 242, 0) -0.76%,
       #edfff2 53.44%
     ),
-    linear-gradient(90deg, rgba(237, 255, 242, 0) -0.76%, #edfff2 53.44%) top
-      right,
     url(../img/hero.png) top right;
 
-  background-size: 830px 100%, 240px 100%, 1050px 100%;
+  background-size: 830px 100%, 1050px 100%;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -94,7 +97,7 @@ a {
   h1 {
     font-size: 122px;
     line-height: 69px;
-    margin-block: 15px;
+    margin-block: 35px;
   }
   p {
     font-size: 23px;
@@ -138,12 +141,36 @@ a {
   margin-bottom: 105px;
 }
 .about__video {
+  position: relative;
+  &::after {
+    content: "";
+    width: 126px;
+    height: 148px;
+    border-radius: 25px;
+    background-color: #3646d9;
+    position: absolute;
+    right: -60px;
+    bottom: 81px;
+    background-image: url(../img/Grp.png);
+    background-position: center;
+  }
+
+  div {
+    width: 354px;
+    height: 436px;
+    background-color: #2ae85f;
+    position: absolute;
+    z-index: -1;
+    left: -14px;
+    top: -14px;
+  }
   iframe {
     width: 561px;
     height: 483px;
     border-radius: 35px;
   }
 }
+
 .about__text {
   max-width: 488px;
 }
@@ -203,10 +230,23 @@ a {
   }
 }
 .features {
-  padding-block: 115px;
   background-color: #3646d9;
+  .container {
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right -100px;
+    padding-block: 115px;
+    background-size: 1010px 885px;
+    display: flex;
+  }
+
   * {
     color: white;
+  }
+  img {
+    width: 700px;
+    height: 583px;
+    margin-top: auto;
   }
   .small-h1 {
     margin-bottom: 12px;

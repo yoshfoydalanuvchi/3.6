@@ -8,6 +8,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  color: #3ea83b;
+}
 
 .btn {
   border: none;
@@ -18,6 +21,12 @@ a {
   border-radius: 43px;
   color: #ffffff;
   background: #3ea83b;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #3ea83b;
+  background-color: #2ae85f;
 }
 
 .green {
@@ -76,8 +85,8 @@ a {
 
 .hero {
   padding-block: 200px 160px;
-  background: linear-gradient(270deg, rgba(237, 255, 242, 0) -0.76%, #edfff2 53.44%), linear-gradient(90deg, rgba(237, 255, 242, 0) -0.76%, #edfff2 53.44%) top right, url(../img/hero.png) top right;
-  background-size: 830px 100%, 240px 100%, 1050px 100%;
+  background: linear-gradient(270deg, rgba(237, 255, 242, 0) -0.76%, #edfff2 53.44%), url(../img/hero.png) top right;
+  background-size: 830px 100%, 1050px 100%;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -93,7 +102,7 @@ a {
 .text-box h1 {
   font-size: 122px;
   line-height: 69px;
-  margin-block: 15px;
+  margin-block: 35px;
 }
 .text-box p {
   font-size: 23px;
@@ -141,6 +150,30 @@ a {
   margin-bottom: 105px;
 }
 
+.about__video {
+  position: relative;
+}
+.about__video::after {
+  content: "";
+  width: 126px;
+  height: 148px;
+  border-radius: 25px;
+  background-color: #3646d9;
+  position: absolute;
+  right: -60px;
+  bottom: 81px;
+  background-image: url(../img/Grp.png);
+  background-position: center;
+}
+.about__video div {
+  width: 354px;
+  height: 436px;
+  background-color: #2ae85f;
+  position: absolute;
+  z-index: -1;
+  left: -14px;
+  top: -14px;
+}
 .about__video iframe {
   width: 561px;
   height: 483px;
@@ -209,11 +242,23 @@ a {
 }
 
 .features {
-  padding-block: 115px;
   background-color: #3646d9;
+}
+.features .container {
+  background-image: url(../img/bg.svg);
+  background-repeat: no-repeat;
+  background-position: top right -100px;
+  padding-block: 115px;
+  background-size: 1010px 885px;
+  display: flex;
 }
 .features * {
   color: white;
+}
+.features img {
+  width: 700px;
+  height: 583px;
+  margin-top: auto;
 }
 .features .small-h1 {
   margin-bottom: 12px;
